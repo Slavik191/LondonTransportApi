@@ -1,0 +1,106 @@
+form{
+    display: flex;
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.openForm{
+    top: 20px;
+}
+
+input[type = 'text']{
+    z-index: 999;
+    border: 2px solid rgba(220,220,220,1);
+    color: #2980b9;
+    font-size: 16px;
+    box-shadow: 1px 1px 3px 1px rgba(200,200,200, 0.2) inset;
+    padding: 5px 10px;
+    width: 250px;
+    outline: none;
+    margin: 0;
+}
+
+
+.button{
+    background: url(https://cdn.icon-icons.com/icons2/510/PNG/512/ios7-arrow-down_icon-icons.com_50352.png);
+    background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
+    background-image: linear-gradient(top, #f4f1ee, #fff);
+    border-radius: 50%;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
+    float:left;
+    height: 35px;
+    margin: 20px 0 0 0;
+    position: relative;
+    width: 35px;			
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.button:after{
+    color:#e9e6e4;
+    content: "";
+    display: block;
+    font-size: 30px;
+    height: 30px;
+    text-decoration: none;
+    text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+    position: absolute;
+    width: 30px;
+}
+
+.arrow:after{
+    content: ">";
+    left: 3px;
+    top: 9px;
+    transform: rotate(90deg);
+}
+
+.ok:after{
+    content: "✔";
+    left: 5px;
+    top: -3px;
+}
+
+.button:hover{
+    background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
+    background-image: linear-gradient(top, #fff, #f4f1ee);
+    color:#0088cc;
+}
+
+.arrow:hover:after{
+    color:#83d244;
+	text-shadow:0px 0px 6px #83d244;
+}
+
+.ok:hover:after{
+    color:#83d244;
+	text-shadow:0px 0px 6px #83d244;
+}
+
+
+.button:active{
+    background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
+    background-image: linear-gradient(top, #efedec, #f7f4f4);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+}
+
+.button:active:after{
+    color:#dbd2d2;
+    text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+}
+
+::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
