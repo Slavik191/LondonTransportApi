@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
-const API_KEY = 'AIzaSyBvMj_O_nSf1DnudP-g6qfQvs6amKbv5nE';
+const API_KEY = '';
 
 let markers;
 
